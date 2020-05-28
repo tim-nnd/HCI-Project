@@ -1,0 +1,231 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Century Gothic', Calibri, sans-serif;
+}
+
+.topnav {
+    background: #F4F4F4;
+    width: 100%;
+    height: 64px;
+    color: rgb(0, 0, 0);
+}
+
+.topnav a {
+    float: left;
+    padding: 17px 3%;
+    font-size: 24px;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+.topnav img {
+    float: left;
+    padding: 10px 20px 0px 20px;
+    width: 200px;
+}
+
+.topnav a:hover {
+    background-color: #D9D9D9;
+    color: black;
+}
+
+.content {
+    width: 100%;
+    background-color: #262626;
+}
+
+.content .map {
+    text-align: right;
+    background-image: url(../Assets/home/map.jpg);
+    background-size: cover;
+    border-top: solid;
+    border-bottom: solid;
+    border-color: #737373;
+}
+
+.content .operator {
+    background-image: url(../Assets/home/operator.jpg);
+    background-size: cover;
+    border-top: solid;
+    border-bottom: solid;
+    border-color: #737373;
+}
+
+.content .map p {
+    font-size: 60px;
+    color: #FFFFFF;
+    padding: 100px 160px;
+}
+
+.content .operator p {
+    font-size: 60px;
+    color: #FFFFFF;
+    padding: 100px 100px;
+}
+
+.content button {
+    background-color: #262626;
+    color: white;
+    padding: 6px 10px;
+    border-style: solid;
+    border-color: #737373;
+    cursor: pointer;
+    font-size: 40px;
+    /* width: 100px; */
+}
+
+.content .map .button_padding {
+    padding: 100px 200px 180px 100px;
+}
+
+.content .operator .button_padding {
+    padding: 100px 100px 140px 140px;
+}
+
+.content_map {
+    text-align: center;
+    height: 1000px;
+    background-color: rgb(0, 0, 0) ;
+    background-image: url(https://static-dm.akamaized.net/siege/prod/r6s-bg-black.jpg);
+}
+
+.content_map h1 {
+    text-align: center;
+    font-size: 50px;
+    padding: 50px 0px 10px 0px;
+    font-weight: normal;
+    color: white;
+}
+
+.content_map h6{
+    text-align: center;
+    font-size: 15px;
+    font-weight: normal;
+    color: white;
+}
+
+.content_map .col {
+    float: left;
+    width: 25%;
+    text-align: center;
+}
+
+.content_map .row{
+    padding: 100px 0px;
+}
+
+.content_operator {
+    text-align: center;
+    height: 1000px;
+    background-color: rgb(0, 0, 0);
+    background-image: url(https://static-dm.akamaized.net/siege/prod/r6s-bg-black.jpg);
+}
+
+.content_operator h1 {
+    text-align: center;
+    font-size: 50px;
+    padding: 50px 0px 10px 0px;
+    font-weight: normal;
+    color: white;
+}
+
+.content_operator h6 {
+    text-align: center;
+    font-size: 15px;
+    font-weight: normal;
+    color: white;
+}
+
+.content_operator .col {
+    float: left;
+    padding: 0px 10px 0px 10px;
+    text-align: center;
+}
+
+/* .content_operator .row {
+    width: 100%;
+    content: "";
+    display: table;
+    clear: both;
+    text-align: center;
+    border: 1px solid red;
+    justify-content: space-between;
+} */
+
+.content_operator .row {
+    max-width: 100%;
+    margin: 0 37%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#coboy{
+    background-image: url(../Assets/operator/coboy.jpg);
+    width: 100px;
+    height: 200px;
+    background-size: auto;
+    display: inline-block;
+}
+
+#cyborg {
+    background-image: url(../Assets/operator/cyborg.jpg);
+    width: 100px;
+    height: 200px;
+    background-size: auto;
+    display: inline-block;
+}
+
+#desperado {
+    background-image: url(../Assets/operator/desperado.jpg);
+    width: 100px;
+    height: 200px;
+    background-size: auto;
+    display: inline-block;
+}
+
+#destroyer {
+    background-image: url(../Assets/operator/destroyer.jpg);
+    width: 100px;
+    height: 200px;
+    background-size: auto;
+    display: inline-block;
+}
+
+#infant {
+    background-image: url(../Assets/operator/infant.jpg);
+    width: 100px;
+    height: 200px;
+    background-size: auto;
+    display: inline-block;
+}
+
+#robin {
+    background-image: url(../Assets/operator/robin.jpg);
+    width: 100px;
+    height: 200px;
+    background-size: auto;
+    display: inline-block;
+}
+
+#spacetrop {
+    background-image: url(../Assets/operator/spacetrop.jpg);
+    width: 100px;
+    height: 200px;
+    background-size: auto;
+    display: inline-block;
+}
+
+#vmec {
+    background-image: url(../Assets/operator/vmec.jpg);
+    width: 100px;
+    height: 200px;
+    background-size: auto;
+    display: inline-block;
+}
+
+@media (max-width:800px) {
+    topnav a{
+        color: orange;
+    }
+}
