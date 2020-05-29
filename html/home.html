@@ -4,6 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rainbow Seven Siege</title>
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+        }
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+    </script>
     <link rel="stylesheet" href="../css/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="../js/script.js"></script>
@@ -14,38 +22,49 @@
     </header>
 
     <div class="topnav">
+        
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="home.html">Home</a>
+            <a href="operator.html">Operator</a>
+            <a href="map.html">Maps</a>
+            <a href="quarantine.html">Quarantine</a>
+            <a href="preorder.html">Pre-Order</a>
+        </div>
+
+        <span class="openNav" onclick="openNav()">
+            <svg width="30" height="24">
+                <path d="M0,5 30,5" stroke="#000" stroke-width="5" />
+                <path d="M0,13 30,13" stroke="#000" stroke-width="5" />
+                <path d="M0,22 30,22" stroke="#000" stroke-width="5" />
+            </svg>
+        </span>
         <img src="../Assets/logo.png">
-        <a class="active" href="home.html">Home</a>
-        <a href="operator.html">Operator</a>
-        <a href="map.html">Maps</a>
-        <a href="#Quarantine">Quarantine</a>
-        <a href="#Pre-Order">Pre-Order</a>
     </div>
 
     <div class="content">
         <div id="slider">
-			<div class="slides-container">
-			   <div class="slide"><img src="../Assets/maps/R6S_MapBorder.jpg" alt="Slider img 1" ></div>
-			   <div class="slide"><img src="../Assets/maps/R6S_MapChalet.jpg" alt="Slider img 2" ></div>
-			   <div class="slide"><img src="../Assets/maps/R6S_MapCOnsulate.jpg" alt="Slider img 3" ></div>
-			   <div class="slide">
-				  <div class="text">
-					 Proof that you can use text and it works
-				  </div>
-			   </div>
-			</div>
+          <div class="slides-container">
+             <div class="slide"><img src="../Assets/maps/R6S_MapBorder.jpg" alt="Slider img 1" ></div>
+             <div class="slide"><img src="../Assets/maps/R6S_MapChalet.jpg" alt="Slider img 2" ></div>
+             <div class="slide"><img src="../Assets/maps/R6S_MapCOnsulate.jpg" alt="Slider img 3" ></div>
+             <div class="slide">
+              <div class="text">
+               Proof that you can use text and it works
+              </div>
+             </div>
+          </div>
 		  
-			<div class="arrows">
-			   <a class="prev" href="#"><</a>
-			   <a class="next" href="#">></a>
-			</div>
-		  
-			<div class="pager">
-			   1 / 4
-			</div>
-         </div>
-         
+          <div class="arrows">
+             <a class="prev" href="#"><</a>
+             <a class="next" href="#">></a>
+          </div>
 
+          <div class="pager">
+             1 / 4
+          </div>
+        </div>
+         
         <div class="map">
             <p>KNOW YOUR MAPS</p>
             <div class="button_padding">
@@ -72,4 +91,4 @@
         <p>Created by Timothy Ananda & Davis Zefanya</p>
     </footer>
 </body>
-</html>
+</html> 
