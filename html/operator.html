@@ -4,16 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Operator</title>
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+        }
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+    </script>
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
     <div class="topnav">
+    
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="home.html">Home</a>
+            <a href="operator.html">Operator</a>
+            <a href="map.html">Maps</a>
+            <a href="quarantine.html">Quarantine</a>
+            <a href="preorder.html">Pre-Order</a>
+        </div>
+    
+        <span class="openNav" onclick="openNav()">
+            <svg width="30" height="24">
+                <path d="M0,5 30,5" stroke="#000" stroke-width="5" />
+                <path d="M0,13 30,13" stroke="#000" stroke-width="5" />
+                <path d="M0,22 30,22" stroke="#000" stroke-width="5" />
+            </svg>
+        </span>
         <img src="../Assets/logo.png">
-        <a class="active" href="home.html">Home</a>
-        <a href="operator.html">Operator</a>
-        <a href="map.html">Maps</a>
-        <a href="#Quarantine">Quarantine</a>
-        <a href="#Pre-Order">Pre-Order</a>
     </div>
 
     <div class="content_operator">
