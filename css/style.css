@@ -17,19 +17,56 @@ footer {
     padding: 10px 20px;
 }
 
+.openNav {
+    float: left;
+    padding-top: 18px;
+    padding-left: 30px;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+#main {
+    transition: margin-left .5s;
+    padding: 20px;
+}
+
 .topnav {
     background: #F4F4F4;
     width: 100%;
     height: 64px;
     color: black;
-}
-
-.topnav a {
-    float: left;
-    padding: 17px 3%;
-    font-size: 24px;
-    color: black;
-    text-decoration: none;
 }
 
 .topnav img {
@@ -38,16 +75,84 @@ footer {
     width: 200px;
 }
 
-.topnav a:hover {
-    background-color: #D9D9D9;
-    color: black;
-}
-
 .content {
     width: 100%;
     background-color: #262626;
 }
 
+#slider {
+	width: 70%;
+	height: 400px;
+	margin: auto;
+	position: relative;
+	font-family: 'Roboto', Arial, Helvetica, sans-serif;
+	font-size: 15px;
+ }
+  
+ #slider .slides-container {
+	position: relative;
+	width: 100%;
+	height: 100%;
+ }
+  
+ #slider .slide {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	display: none;
+ }
+  
+ #slider .slide:first-child {
+	display: block;
+ }
+
+ #slider .slide .text {
+	width: 100%;
+	height: 100%;
+	background: #8fc6eb;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 18px;
+	font-weight: bold;
+	text-align: center;
+ }
+  
+ #slider img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+ }
+ 
+ #slider .pager {
+	font-size: 14px;
+	font-weight: 900;
+	color: #777;
+	text-align: center;
+	margin-top: 5px;
+ }
+  
+ #slider .arrows a {
+	position: absolute;
+	text-decoration: none;
+	color: rgba(255, 255, 255, 0.65);
+	top: 43%;
+	left: 15px;
+	font-weight: 400;
+	line-height: 1;
+	font-size: 42px;
+ }
+  
+ #slider .arrows a:hover {
+	color: #fff;
+ }
+  
+ #slider .arrows a.next {
+	left: initial;
+	right: 15px;
+ }
+ 
 .content .map {
     text-align: right;
     background-image: url(../Assets/home/map.jpg);
@@ -68,7 +173,10 @@ footer {
 .content .map p {
     font-size: 60px;
     color: #FFFFFF;
-    padding: 100px 160px;
+    margin: 100px 160px;
+    padding-right: 10px;
+    background: rgba(0, 0, 0, 0.7);
+    display: inline-block;
 }
 
 .content .operator p {
@@ -238,7 +346,5 @@ footer {
 }
 
 @media (max-width:800px) {
-    topnav a{
-        color: orange;
-    }
+    .topnav{display:none}
 }
