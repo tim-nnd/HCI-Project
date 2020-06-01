@@ -1,9 +1,24 @@
 $(function(){
+    // Nav
+    function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+    }
+    function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+    }
+
+    $(".openNav").click(function(){
+        openNav();
+    });
+    $(".closebtn").click(function(){
+        closeNav();
+    });
+
     // Start autoplay
     var auto = true;
     
     // Pause duration between slides (ms)
-    var pause = 3000;
+    var pause = 6000;
     
     // Get parent element
     var $this = $('#slider');

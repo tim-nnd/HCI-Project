@@ -3,21 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rainbow Seven Siege</title>
+    <title>Pre-Order</title>
     <link rel="stylesheet" href="../css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="../js/script.js"></script>
 </head>
 <body>
+    <header>
+        <h1>Ubipost</h1>
+    </header>
+
     <div class="topnav">
+        <div class="side-nav">
+            <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn">&times;</a>
+                <a href="home.html">Home</a>
+                <a href="operator.html">Operator</a>
+                <a href="map.html">Maps</a>
+                <a href="quarantine.html">Quarantine</a>
+                <a href="preorder.html">Pre-Order</a>
+            </div>
+    
+            <span class="openNav">
+                <svg width="30" height="24">
+                    <path d="M0,5 30,5" stroke="#000" stroke-width="5" />
+                    <path d="M0,13 30,13" stroke="#000" stroke-width="5" />
+                    <path d="M0,22 30,22" stroke="#000" stroke-width="5" />
+                </svg>
+            </span>
+        </div>
+
         <img src="../Assets/logo.png">
-        <a class="active" href="home.html">Home</a>
-        <a href="operator.html">Operator</a>
-        <a href="map.html">Maps</a>
-        <a href="#Quarantine">Quarantine</a>
-        <a href="#Pre-Order">Pre-Order</a>
+
+        <div class="wide-nav">
+            <a href="home.html">Home</a>
+            <a href="operator.html">Operator</a>
+            <a href="map.html">Maps</a>
+            <a href="quarantine.html">Quarantine</a>
+            <a href="preorder.html">Pre-Order</a>
+        </div>
     </div>
 
     <div class="content">
-        
+        <h1>Register</h1>
+        <p>Please fill in your data.</p><br>
+        <strong>Username</strong><br>
+        <input type="text" placeholder="name" required><br><br>
+        <strong>Email</strong><br>
+        <input type="text" placeholder="example@binus.ac.id" required><br><br>
+        <strong>Password</strong><br>
+        <input type="password" placeholder="Enter Password" required><br><br>
+        <strong>Address</strong><br>
+        <input type="text" placeholder="St. example" required><br><br>
+        <strong>Number of Copies</strong><br>
+        <input type="text" placeholder="St. example" required><br><br>
+        <strong>Type of Game</strong><br>
+        <select>
+            <option value="regular">Regular</option>
+            <option value="goty">Game of the Year Edition</option>
+            <option value="quarantine">Quarantine</option>
+        </select><br><br>
+        <strong>Birthday</strong><br>
+        <input type="date" required><br><br>
+        <input type="checkbox" required> I have read and agree to the <a href="https://binusmaya.binus.ac.id/newDefault/login.html">terms and services</a>.<br>
+        <button class="register_button">Register</button>
     </div>
     
     <footer>
