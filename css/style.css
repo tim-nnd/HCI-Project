@@ -283,6 +283,11 @@ footer {
     color: white;
 }
 
+.content_operator p{
+    color : white;
+    margin-bottom: 20px;
+}
+
 .content_operator .col {
     float: left;
     padding: 0px 10px 0px 10px;
@@ -304,6 +309,23 @@ footer {
     margin: 0 37%;
     display: flex;
     justify-content: space-between;
+}
+
+.content_preorder {
+    text-align: center;
+    padding-top: 20px;
+    height: 760px;
+}
+
+.content_preorder button{
+    background-color: #262626;
+    color: white;
+    padding: 6px 10px;
+    margin-top: 15px;
+    border-style: solid;
+    border-color: #737373;
+    cursor: pointer;
+    font-size: 40px;
 }
 
 #coboy{
