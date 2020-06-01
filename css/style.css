@@ -256,6 +256,11 @@ footer {
     padding: 100px 0px;
 }
 
+.content_map .row .col p{
+    color : white;
+    font-size: 20px;
+}
+
 .content_operator {
     text-align: center;
     height: 1000px;
