@@ -121,20 +121,20 @@ footer {
 	top: 0;
 	display: none;
  }
+
+ #slider .slide p {
+    position: absolute;
+	font-size: 24px;
+	color: white;
+    text-align: left;
+    padding: 6px 10px 20px 10px;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+ }
   
  #slider .slide:first-child {
 	display: block;
- }
-
- #slider .slide .text {
-	width: 100%;
-	height: 100%;
-	background: #8fc6eb;
-	color: #fff;
-	text-transform: uppercase;
-	font-size: 18px;
-	font-weight: bold;
-	text-align: center;
  }
   
  #slider img {
@@ -145,8 +145,8 @@ footer {
  
  #slider .pager {
     position: absolute;
-	font-size: 14px;
-	font-weight: 900;
+    font-size: 14px;
+    font-weight: bold;
 	color: #d9d9d9;
 	text-align: center;
     bottom: 1%;
@@ -263,7 +263,7 @@ footer {
 
 .content_operator {
     text-align: center;
-    height: 1000px;
+    height: 1200px;
     background-color: rgb(0, 0, 0);
     background-image: url(https://static-dm.akamaized.net/siege/prod/r6s-bg-black.jpg);
 }
@@ -283,6 +283,24 @@ footer {
     color: white;
 }
 
+.content_operator #slider {
+    width: 423px;
+	margin: auto;
+	position: relative;
+	font-size: 15px;
+}
+
+.content_operator #slider p {
+    position: absolute;
+	font-size: 24px;
+	color: white;
+    text-align: left;
+    padding: 6px 10px;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
 .content_operator p{
     color : white;
     margin-bottom: 20px;
@@ -292,17 +310,8 @@ footer {
     float: left;
     padding: 0px 10px 0px 10px;
     text-align: center;
+    cursor: pointer;
 }
-
-/* .content_operator .row {
-    width: 100%;
-    content: "";
-    display: table;
-    clear: both;
-    text-align: center;
-    border: 1px solid red;
-    justify-content: space-between;
-} */
 
 .content_operator .row {
     max-width: 100%;
@@ -311,13 +320,50 @@ footer {
     justify-content: space-between;
 }
 
+.content_quarantine {
+    text-align: center;
+    color: white;
+    background-image: url(https://static-dm.akamaized.net/siege/prod/r6s-bg-black.jpg);
+}
+
+.content_quarantine #slider {
+    height: 550px;
+}
+
+.content_quarantine h1 {
+    font-size: 60px;
+}
+
 .content_preorder {
     text-align: center;
     padding-top: 20px;
     height: 760px;
+    color: white;
+    background-image: url(https://static-dm.akamaized.net/siege/prod/r6s-bg-black.jpg);
 }
 
-.content_preorder button{
+.content_preorder strong {
+    font-size: 20px;
+}
+
+.content_preorder input {
+    margin: 2px auto;
+    padding: 6px 10px;
+    width: 20%;
+}
+
+.content_preorder select {
+    margin: 2px auto;
+    padding: 6px 10px;
+    width: 21%;
+}
+
+.content_preorder #inputTerms {
+    padding: 0;
+    width: auto;
+}
+
+.content_preorder button {
     background-color: #262626;
     color: white;
     padding: 6px 10px;

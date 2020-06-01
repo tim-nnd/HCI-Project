@@ -1,12 +1,5 @@
 $(function(){
     // Nav
-    function openNav() {
-        document.getElementById("mySidenav").style.width = "250px";
-    }
-    function closeNav() {
-        document.getElementById("mySidenav").style.width = "0";
-    }
-
     $(".openNav").click(function(){
         openNav();
     });
@@ -14,8 +7,13 @@ $(function(){
         closeNav();
     });
 
-    // Start autoplay
-    var auto = true;
+    // Autoplay
+    if(document.location.pathname.match(/[^\/]+$/)[0] == 'operator.html'){
+        var auto = false;
+    }
+    else{
+        var auto = true;
+    }
     
     // Pause duration between slides (ms)
     var pause = 6000;
@@ -84,6 +82,23 @@ $(function(){
         pager.text(currentSlideIndex+' / '+slidesCount);
     }
 
+    function fadeSelect(slideIndex) {
+        currentSlide.removeClass('active').fadeOut(700);
+        if(currentSlideIndex < slideIndex){
+            while(currentSlideIndex!=slideIndex){
+                currentSlideIndex++;
+                currentSlide = currentSlide.next();
+            }
+        }
+        else if(currentSlideIndex > slideIndex){
+            while(currentSlideIndex!=slideIndex){
+                currentSlideIndex--;
+                currentSlide = currentSlide.prev();
+            }
+        }
+        currentSlide.delay(500).addClass('active').fadeIn(700);
+    }
+
     // Function that starts the autoplay and resets it
     // in case user navigated (clicked prev or next)
     function AutoPlay() {
@@ -106,7 +121,89 @@ $(function(){
         fadePrev();
         AutoPlay();
     });
+
+    $("#coboy").click(function(){
+        fadeSelect(1);
+    })
+
+    $("#cyborg").click(function(){
+        fadeSelect(2);
+    })
+
+    $("#desperado").click(function(){
+        fadeSelect(3);
+    })
+
+    $("#destroyer").click(function(){
+        fadeSelect(4);
+    })
+
+    $("#infant").click(function(){
+        fadeSelect(5);
+    })
+
+    $("#robin").click(function(){
+        fadeSelect(6);
+    })
+
+    $("#spacetrop").click(function(){
+        fadeSelect(7);
+    })
+
+    $("#vmec").click(function(){
+        fadeSelect(8);
+    })
     
     // Start autoplay if auto is set to true
     AutoPlay();
+
+    $(".preorder_button").click(function(){
+        validate();
+    })
 })
+
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+}
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}
+
+function validate()
+{
+    var Username = document.getElementById('inputName');
+    var Email = document.getElementById('inputEmail');
+    var Password = document.getElementById('inputPassword');    
+    var Address = document.getElementById('inputAddress');
+    var Copies = document.getElementById('inputCopies');
+    var Type = document.getElementById('selectType');
+    var Terms = document.getElementById('inputTerms');
+
+    if(Username.value.length <= 4){
+        alert('Username must be more than 4 characters');
+    }
+
+    if(Email.value == ""){
+        alert('Please enter Email');
+    }
+
+    if(Password.value == ""){
+        alert('Please enter Password');
+    }
+
+    if(Copies.value < 1){
+        alert('Copies must at least be 1');
+    }
+
+    if(Address.value == ""){
+        alert('Please enter a valid Address');
+    }
+
+    if(Type.value == ""){
+        alert('Please choose game type');
+    }
+
+    if(Terms.checked == false){
+        alert('Terms must be agreed');
+    }
+}

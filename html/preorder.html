@@ -45,28 +45,27 @@
     </div>
 
     <div class="content_preorder">
-        <h1>Register</h1>
+        <h1>Pre-Order</h1>
         <p>Please fill in your data.</p><br>
         <strong>Username</strong><br>
-        <input type="text" placeholder="name" required><br><br>
+        <input id="inputName" type="text" placeholder="Name" required><br><br>
         <strong>Email</strong><br>
-        <input type="text" placeholder="example@binus.ac.id" required><br><br>
+        <input id="inputEmail" type="text" placeholder="example@binus.ac.id" required><br><br>
         <strong>Password</strong><br>
-        <input type="password" placeholder="Enter Password" required><br><br>
+        <input id="inputPassword" type="password" placeholder="Enter Password" required><br><br>
         <strong>Address</strong><br>
-        <input type="text" placeholder="St. example" required><br><br>
+        <input id="inputAddress" type="text" placeholder="St. example" required><br><br>
         <strong>Number of Copies</strong><br>
-        <input type="text" placeholder="St. example" required><br><br>
+        <input id="inputCopies" type="number" placeholder="#" required><br><br>
         <strong>Type of Game</strong><br>
-        <select>
+        <select id="selectType">
             <option value="regular">Regular</option>
-            <option value="goty">Game of the Year Edition</option>
             <option value="quarantine">Quarantine</option>
+            <option value="ultimate">Ultimate Edition</option>
+            <option value="goty">Game of the Year Edition</option>
         </select><br><br>
-        <strong>Birthday</strong><br>
-        <input type="date" required><br><br>
-        <input type="checkbox" required> I have read and agree to the <a href="https://binusmaya.binus.ac.id/newDefault/login.html">terms and services</a>.<br>
-        <button class="register_button">Register</button>
+        <input id="inputTerms" type="checkbox" required> I have read and agree to the <a href="https://binusmaya.binus.ac.id/newDefault/login.html">terms and services</a>.<br>
+        <button class="preorder_button">Order</button>
     </div>
     
     <footer>
