@@ -294,7 +294,9 @@ footer h1{
 }
 
 .content_operator #slider img {
+    height: 495px;
     width: 423px;
+    display: inline-block;
 }
 
 .content_operator #slider .operator-desc{
@@ -302,9 +304,9 @@ footer h1{
     position: absolute;
     text-align: left;
     top: 1%;
+    left: 5%;
     padding: 6px 10px;
     width: 25%;
-    padding-left: 150px;
 }
 
 .content_operator #slider .operator-desc h1{
@@ -460,17 +462,19 @@ footer h1{
 
     .content_operator #slider .operator-desc {
         color: white;
-        position: absolute;
+        position: relative;
         text-align: center;
-        top: 90%;
-        left: 15%;
+        left: 20%;
         padding: 6px 10px;
         width: 50%;
-        padding-left: 150px;
     }
 
-    .content_operator #slider{
-        padding-bottom: 300px;
+    .content_operator #slider {
+        height: 1000px;
+    }
+
+    .content_operator #slider .slides-container{
+        display: inline-block;
     }
 
     .content_operator #slider .operator-desc h1 {
@@ -492,7 +496,7 @@ footer h1{
 
     .content_operator .row {
         max-width: 100%;
-        margin: 0 37%;
+        margin: 0 20%;
         display: flex;
         justify-content: space-between;
     }
